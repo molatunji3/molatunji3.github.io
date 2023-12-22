@@ -1,1 +1,1 @@
-"hello world"
+theme: jekyll-theme-THEME-NAME
