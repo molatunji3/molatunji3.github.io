@@ -46,6 +46,23 @@ jobs:
           issue-message: "hi"
     # Comment to post on an individual's first pull request
           pr-message: "check"
+      - name: Deploy Ghost Theme
+  # You may pin to the exact commit or the version.
+        #uses: TryGhost/action-deploy-theme@ba1de75b3eef27fee07a4cab741d27d179c198d8
+        uses: TryGhost/action-deploy-theme@v1.6.4
+        with:
+    # Ghost Admin API Url
+            api-url: molatunji3.github.io
+    # Ghost Admin API Key
+            api-key: 'key'
+    # Files or folders to exclude (space-separated list)
+            exclude:  optional
+    # A custom theme name that overrides the default name in package.json
+            theme-name: optional
+    # Path to a built zip file. If this is included, the `exclude` and `theme-name` options are ignored
+            file:  optional
+    # A custom directory to zip when a theme is in a subdirectory
+            working-directory: optional
           
   # Deployment job
   deploy:
