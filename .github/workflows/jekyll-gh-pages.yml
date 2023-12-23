@@ -43,9 +43,9 @@ jobs:
     # Token for the repository. Can be passed in using CCCC
           repo-token: ${{ secrets.GITHUB_TOKEN }}
     # Comment to post on an individual's first issue
-          issue-message: hi
+          issue-message: "hi"
     # Comment to post on an individual's first pull request
-          pr-message: hi
+          pr-message: "check"
           
   # Deployment job
   deploy:
